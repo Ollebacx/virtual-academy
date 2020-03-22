@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+
 const api = axios.create({
   baseURL: 'api/',
   timeout: 1000
@@ -32,6 +32,7 @@ document.getElementById('btn-login').addEventListener('click', (event) => {
     email: document.getElementById('login_email').value,
     password: document.getElementById('login_password').value
   }
+  console.log(newUser)
 
   api
     .post('auth/login', newUser)
@@ -39,14 +40,12 @@ document.getElementById('btn-login').addEventListener('click', (event) => {
       if (response.data.error) {
         alert('WRONG PASSWORD')
       } else {
-        console.log("hey")
-
         localStorage.clear()
         localStorage.setItem('token', response.data.token)
         localStorage.setItem('firstName', response.data.firstName)
         localStorage.setItem('email', response.data.email)
         localStorage.setItem('photoURL', response.data.photoURL)
-        location.assign('explore.html')
+        location.assign('home.html')
       }
     })
     .catch(function (error) {
