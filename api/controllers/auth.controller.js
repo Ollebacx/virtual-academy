@@ -19,7 +19,7 @@ function signup (req, res) {
       const token = jwt.sign(
         { email: req.body.email },
         process.env.SECRET, // TAKE SECRET KEY FROM .ENV
-        { expiresIn: '1w' }
+        { expiresIn: '1d' }
       )
 
       return res.json({ token: token, email: req.body.email, firstName: req.body.firstName })
@@ -42,7 +42,7 @@ function login (req, res) {
         const token = jwt.sign(
           { email: user.email },
           process.env.SECRET,
-          { expiresIn: '1h' }
+          { expiresIn: '1d' }
         )
 
         return res.json({ token: token, email: user.email, firstName: user.firstName, photoURL: user.photoURL })

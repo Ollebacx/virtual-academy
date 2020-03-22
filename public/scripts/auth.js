@@ -20,7 +20,7 @@ document.getElementById('btn-signup').addEventListener('click', (event) => {
       localStorage.setItem('email', response.data.email)
       localStorage.setItem('firstName', response.data.firstName)
       localStorate.setItem('photoURL', response.data.photoURL)
-      location.assign('explore.html')
+      location.assign('home.html')
     })
     .catch(function (error) {
       console.log(error.response)
@@ -39,6 +39,8 @@ document.getElementById('btn-login').addEventListener('click', (event) => {
       if (response.data.error) {
         alert('WRONG PASSWORD')
       } else {
+        console.log("hey")
+
         localStorage.clear()
         localStorage.setItem('token', response.data.token)
         localStorage.setItem('firstName', response.data.firstName)

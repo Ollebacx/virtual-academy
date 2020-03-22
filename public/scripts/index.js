@@ -10,20 +10,6 @@
 
   document.getElementById('btn-logout').addEventListener('click', () => {
     localStorage.clear()
-    location.assign('index.html')
+    location.assign('auth.html')
   })
-
-  $(function () {
-    // Sidebar toggle behavior
-    $('#sidebarCollapse').on('click', function () {
-      $('#sidebar, #content, #name, #explore, #mylessons, #logout, img').toggleClass('active')
-    })
-  })
-
-/*   document.getElementById('resize').addEventListener('click', function (event) {
-    document.querySelectorAll('.menu-text').forEach(elem => {
-      elem.classList.toggle('hidden-text')
-    })
-    document.getElementsByClassName('sidebar')[0].classList.toggle('sidebar-collapsed')
-  }) */
 })()
