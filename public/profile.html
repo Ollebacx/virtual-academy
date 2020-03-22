@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reboot Virtual Academy</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body class="bg-dark">
+
+  <nav class="navbar navbar-light bg-white rounded-0">
+    <span class="col container justify-content-start">
+      <a class="navbar-brand" href="#">Reboot Logo</a>
+    </span>
+  </nav>
+  <div id="wrapper">
+    <div class="sidebar bg-white">
+
+      <a href="#" id="resize"
+        class="glyphicon glyphicon-transfer text-info bg-light rounded-circle p-3 shadow-sm mr-4 float-right"></a>
+      <div class="nav-item col text-center">
+
+        <a href="./profile.html" class="mt-5 hover nav-link text-dark">
+          <img id="userphoto" alt="..." width="65"
+          class="rounded-circle m-4">
+          <p class="h4 menu-text">Hello <span id="username"></span></p>
+        </a>
+      </div>
+      <div class="nav-item col">
+        <a href="./explore.html" class="hover nav-link text-dark d-flex justify-content-center align-items-center">
+          <span class="glyphicon glyphicon-globe display-4 m-4"> </span>
+          <p class="h4 menu-text">Explore</p>
+        </a>
+      </div>
+      <div class="nav-item col">
+        <a href="#" class="hover nav-link text-dark d-flex justify-content-center align-items-center">
+          <span class="glyphicon glyphicon-record display-4 m-4"></span>
+          <p class="h4 menu-text">My Courses</p>
+        </a>
+      </div>
+
+      <div class="nav-item col">
+        <a href="./index.html" class="hover nav-link text-dark block d-flex justify-content-center align-items-center">
+          <span class="glyphicon glyphicon-log-out display-4 m-4"></span>
+          <p class="h4 menu-text">Log out</p>
+        </a>
+      </div>
+    </div>
+    <div class="content inner-shadow bg-light rounded-corner">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="jumbotron bg-white col-6">
+            <div class="row d-flex">
+              <div class=" col-6">
+                <label for="firstName">First Name</label>
+                <input type="firstName" class="form-control" id="fistName" placeholder="First Name">
+              </div>
+              <div class="form-group col-6">
+                <label for="lastName">Last Name</label>
+                <input type="lastName" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Change email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label for="gitaccount">Git Hub</label>
+                <input type="text" class="form-control" id="github" placeholder="Git Hub Account">
+              </div>
+            </div>
+            <div class="row d-flex">
+              <div class="form-group col-3">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year" placeholder="2000">
+              </div>
+              <div class="form-group col-3">
+                <label for="country">Month</label>
+                <select class="form-control custom-select d-block w-100" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </div>
+              <div class="form-group col-3">
+                <label for="day">Day</label>
+                <select class="form-control custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-6 mt-4">
+                <label for="userPhoto">Change your profile picture</label>
+                <input type="file" id="userPh oto">
+                <p class="help-block">(.jpe, .png)</p>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-end">
+
+              <a href="#" class="col-3 btn btn-default mr-5">Reset</a>
+              <a href="#" class="col-3 btn btn-danger">Update Profile</a>
+
+            </div>
+          </div>
+
+          <div class="bg-transparent col-3">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Basic Information</li>
+                <li class="list-group-item">Change Password</li>
+                <li class="list-group-item text-danger">Delete Account</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/index.js"></script>
+  <script src="scripts/explore.js"></script>
+</body>
+</html>

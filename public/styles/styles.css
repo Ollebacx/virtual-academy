@@ -1,0 +1,30 @@
+.mtop {
+  margin-top: 5%
+}
+.lesson{
+  min-width: 50%;
+  width: 800px;
+  margin:auto;
+}
+.lesson:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+#elem-sidebar:hover{
+  background-color: FAFAFA;
+  color: #17A2B8;
+}
+
+.js{
+  background-color: rgb(236, 193, 0);
+}
+.css{
+  background-color: rgb(86, 149, 233);
+}
+.html{
+  background-color: rgb(212, 74, 74);
+}
+.uxui{
+  background: rgb(175,58,180);
+  background: linear-gradient(43deg, rgba(175,58,180,1) 0%, rgba(98,158,246,1) 59%, rgba(69,252,228,1) 100%);
+}

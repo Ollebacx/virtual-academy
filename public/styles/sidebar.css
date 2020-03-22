@@ -1,0 +1,41 @@
+.navbar {
+  margin: 0px !important;
+}
+
+#wrapper {
+  display: block;
+}
+.sidebar{
+  float: left;
+  width:250px;
+  height: calc(100vh - 40px);
+  transition: all 0.4s ease-in-out;
+}
+.sidebar-collapsed {
+  width: 100px;
+  transition: all 0.4s ease-in-out;
+}
+.content {
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+
+.hidden-text{
+  display:none;
+}
+.inner-shadow {
+  -moz-box-shadow:    inset 250px 0px 30px  #d1d1d1;
+  -webkit-box-shadow: inset 250px 0px 30px  #d1d1d1;
+  box-shadow:         inset 250px 0px 30px  #d1d1d1;
+}
+.hover:hover{
+  color: #1AB4CC;
+  background-color: rgba(243, 243, 243, 0.568);
+}
+hover:active{
+  color: blue;
+  background-color: rgba(243, 243, 243, 0.568);
+}
+.rounded-corner{
+  border-radius: 50px 0px 0px 50px;
+}
