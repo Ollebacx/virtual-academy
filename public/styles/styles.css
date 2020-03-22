@@ -1,4 +1,4 @@
-/* Index Styles */
+/* Auth Styles */
 .btn:hover {
   color:white !important;
 }
@@ -9,7 +9,6 @@
 .mtop {
   margin-top: 5%
 }
-/* End Index Styles */
 
 /* Home Styles */
 .sidenav {
@@ -52,8 +51,8 @@
   margin-right: 0px !important;
   background-color: #202020;
 }
-.card-deck{
-  margin: 0px !important;
+.content-max{
+  width: 90%;
 }
 /* End Home Styles */
 

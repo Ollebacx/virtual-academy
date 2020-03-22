@@ -11,114 +11,102 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 
-  <!-- New Vertical Nav -->
+  <!-- Vertical Nav -->
   <nav class="nav flex-column sidenav">
-    <a href="./profile.html">
-    <img id="userphoto" alt="..." width="65"
-    class="rounded-circle m-4">
-    <span class= "h4" id="username"></span>
-   </a>
+    <nav class="navbar">
+      <span class="navbar-brand text-info h6">Reboot Academy</span>
+    </nav>
     <a class="nav-link active" href="#">Home</a>
     <a class="nav-link" href="#">Explore</a>
     <a class="nav-link" href="#">Msg</a>
     <a class="nav-link" href="" id="btn-logout">Log out</a>
   </nav>
-
-<!-- Page content holder -->
-  <div class="main p-5">
+  <!-- Page content holder -->
+  <div class="main">
+    <!-- Top Nav -->
+    <nav class="navbar content-max m-auto">
+      <span class="container justify-content-between">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <span>
+          <span class="navbar-text">
+            <a href="./profile.html">
+              <img id="userphoto" alt="..." width="" class="rounded-circle m-4">
+            </a></span>
+          <div class="btn-group">
+            <button type="button" class="btn text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="h5 text-white" id="username"></span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">Profile</button>
+              <hr class="my-2">
+              <button class="dropdown-item" type="button">Log out</button>
+            </div>
+          </div>
+        </span>
+      </span>
+    </nav>
+    <!-- Content -->
+    <div class="content-max m-auto">
     <div class="h3 text-white">On going</div>
     <hr class="my-2 mb-5 bg-dark">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
-        </div>
+    <div class="mb-3 text-center">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
-        </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
-        </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
-        </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-        </div>
+
+    </div>
+    <!-- Demo content -->
+
+    <div class="content inner-shadow bg-light rounded-corner">
+      <div class="container justify-content-end" id="lessons">
+        <!-- LESSON -->
       </div>
     </div>
-<!-- Demo content -->
 
-<div class="content inner-shadow bg-light rounded-corner">
-  <div class="container justify-content-end" id="lessons">
-    <!-- LESSON -->
+
   </div>
+  <!-- End demo content -->
 </div>
-
-
-</div>
-<!-- End demo content -->
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
