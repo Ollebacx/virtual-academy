@@ -57,8 +57,8 @@ You should see something like:
 ```
 Starting up http-server, serving ./
 Available on:
-  http://127.0.0.1:3000
-  http://192.168.43.142:3000
+  http://127.0.0.1:5000
+  http://192.168.43.142:5000
 Hit CTRL-C to stop the server
 ```
 
@@ -102,7 +102,7 @@ DELETE | `me/lessons/:lessonId`  | Delete User's lesson from My Lessons
 ### TO DO
 METHOD | URL                     | What does it do
 -------|-------------------------|---------------------------------
-GET    | `me/profile`            | Get info from User 
+GET    | `me/profile`            | Get info from User
 PUT    | `me/profile`            | Modify User info
 DELETE | `me/profile`            | Delete User
 
