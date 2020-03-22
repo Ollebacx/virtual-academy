@@ -26,4 +26,3 @@ module.exports = {
   authUser,
   handleError
 }
-//a ver si no me cargo nada
