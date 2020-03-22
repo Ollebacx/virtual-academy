@@ -9,52 +9,104 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
 
- <!-- Top navbar -->
- <div class="horizontal-nav">
-  <a class="navbar-brand" href="#"><h4 class="text-info font-weight-bold ml-4 mt-1">Reboot Academy</h4></a>
-</div>
-<!-- Vertical navbar -->
-<div class="vertical-nav bg-white d-flex align-items-start" id="sidebar">
-  <div class="nav bg-white mb-0 align-content-start col-12">
-    <div class="nav-item text-center col-12 p-4">
-      <a href="./profile.html">
-        <img id="userphoto" alt="..." width="65"
-      class="rounded-circle m-4">
-      <h4 id="name" class="m-0">Hello <span id="username"></span></h4>
-     </a> <!--<p class="font-weight-light text-muted mb-0">Web developer</p>-->
-    </div>
-
-    <div class="nav-item col-12 p-4 text-center">
-      <a href="./explore.html" class="btn nav-link text-dark bg-white">
-        <span class="glyphicon glyphicon-globe display-4 m-4"></span> <h4 id="explore">Explore</h4>
-      </a>
-    </div>
-    <div class="nav-item col-12 p-4 text-center elem-sidebar">
-      <a href="./mylessons.html" class="btn nav-link text-dark">
-      <span class="glyphicon glyphicon-record display-4 m-4" ></span><h4 id="mylessons">My Lessons</h4>
-    </a>
-  </div>
-  <div class="nav-item col-12 p-4 text-center">
-    <a id="btn-logout" class="btn nav-link text-dark" >
-      <span class="glyphicon glyphicon-off display-4 m-4 d-inline"></span><h4 id="logout">Log out</h4>
-    </a>
-  </div>
-</div>
-<!-- Toggle button -->
-<button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-circle ml-2 mt-2 p-3 col"><span class="display-6 glyphicon glyphicon-transfer"></span></button>
-</div>
-<!-- End vertical navbar -->
-
+  <!-- New Vertical Nav -->
+  <nav class="nav flex-column sidenav">
+    <a href="./profile.html">
+    <img id="userphoto" alt="..." width="65"
+    class="rounded-circle m-4">
+    <span class= "h4" id="username"></span>
+   </a>
+    <a class="nav-link active" href="#">Home</a>
+    <a class="nav-link" href="#">Explore</a>
+    <a class="nav-link" href="#">Msg</a>
+    <a class="nav-link" href="#">Log out</a>
+  </nav>
 
 <!-- Page content holder -->
-<div class="page-content background inner-shadow" id="content">
-
+  <div class="main p-5">
+    <div class="h3 text-white">On going</div>
+    <hr class="my-2 mb-5 bg-dark">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Pro</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>20 users included</li>
+            <li>10 GB of storage</li>
+            <li>Priority email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Enterprise</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>30 users included</li>
+            <li>15 GB of storage</li>
+            <li>Phone and email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+        </div>
+      </div>
+    </div>
 <!-- Demo content -->
 
 <div class="content inner-shadow bg-light rounded-corner">
@@ -79,7 +131,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 
   <script src="scripts/index.js"></script>
-  <script src="scripts/explore.js"></script>
   <script src="scripts/mylessons.js"></script>
 </body>
 
