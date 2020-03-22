@@ -98,7 +98,12 @@ POST   | `me/lessons/:lessonId`  | Add lesson to my Lessons (unstarted)
 GET    | `me/lessons/:lessonId`  | Return my lesson (with user progress)
 PUT    | `me/lessons/:lessonId`  | Modify User's lesson (set progress)
 DELETE | `me/lessons/:lessonId`  | Delete User's lesson from My Lessons
-GET    | `me/profile`            | Get info from User (TODO)
-PUT    | `me/profile`            | Modify User info (TODO)
+
+### TO DO
+METHOD | URL                     | What does it do
+-------|-------------------------|---------------------------------
+GET    | `me/profile`            | Get info from User 
+PUT    | `me/profile`            | Modify User info
+DELETE | `me/profile`            | Delete User
 
 Happy coding!

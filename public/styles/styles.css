@@ -1,3 +1,13 @@
+
+
+/* Index Styles */
+.btn:hover {
+  color:white !important;
+}
+.max {
+  max-width: 80%;
+}
+/* End Index Styles */
 .mtop {
   margin-top: 5%
 }

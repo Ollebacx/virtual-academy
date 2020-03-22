@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +13,31 @@
 </head>
 
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-    <span class="col-11 offset container justify-content-between">
-      <a class="navbar-brand" href="#">Reboot Academy</a>
+  <nav class="navbar navbar bg-white shadow-sm">
+    <span class="max container justify-content-between">
+      <span class="navbar-brand text-info h6">Reboot Academy</span>
+      <span class="d-flex justify-content-start align-items-end">
+        <span class="navbar-text">
 
-      <span class="navbar-text">
-        <a href="" class="btn btn-outline-info text-info pl-4 pr-4" data-toggle="modal"
-          data-target="#modalLoginForm">Login</a>
+            <label for="login_email">Email address</label>
+            <input type="email" id="login_email" class="form-control col-11" placeholder="name@example.com" required
+              autofocus>
+
+        </span>
+        <span class="navbar-text">
+            <label for="login_password">Password</label>
+            <input type="password" id="login_password" class="form-control col-10" required>
+        </span>
+        <span class="navbar-text">
+          <a href="" class="btn btn-outline-info">Login</a>
+        </span>
       </span>
     </span>
-
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header text-center">
-            <h3 class="modal-title w-100">Get into Reboot Virtual Academy</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body mx-3">
-            <form class="form-signin">
-              <div class="form-label-group">
-                <label for="login_email">Email address</label>
-                <input type="email" id="login_email" class="form-control mb-3" placeholder="name@example.com"
-                  required autofocus>
-              </div>
-              <div class="form-label-group">
-                <label for="login_password">Password</label>
-                <input type="password" id="login_password" class="form-control mb-5"
-                  required>
-              </div>
-              <a class="btn btn-lg btn-info btn-block" id="btn-login">Log in</a>
-            </form>
-            <hr class="my-4">
-            <div class="row text-center col m-auto">
-              <div class="mb-3">New to Reboot?
-                <a href="" class="" data-dismiss="modal" aria-label="Close">Create an account by signing up</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </nav>
 
   <div class="container mtop">
     <div class="row">
-      <div class="col-11 offset d-flex justify-content-center">
+      <div class="max m-auto offset d-flex justify-content-center">
         <div class="jumbotron bg-transparent col-7">
           <h1 class="display-4">We make full stack developers</h1>
           <h2 class="lead">REB-ON is the new intensive learning platform online from Reboot Academy to become a tech
@@ -84,12 +61,13 @@
 
             <div class="form-label-group">
               <label for="signup_email">Email address</label>
-              <input type="email" id="signup_email" class="form-control mb-3" placeholder="name@example.com" required autofocus>
+              <input type="email" id="signup_email" class="form-control mb-3" placeholder="name@example.com" required
+                autofocus>
             </div>
 
             <div class="form-label-group">
               <label for="signup_password">Password</label>
-              <input type="password" id="signup_password" class="form-control" placeholder=""  required>
+              <input type="password" id="signup_password" class="form-control" placeholder="" required>
               <small class="text-muted">Your password must be 8-20 characters long, contain letters and numbers</small>
             </div>
 
@@ -112,4 +90,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
   <script src="scripts/auth.js"></script>
 </body>
+
 </html>
