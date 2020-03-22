@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reboot Virtual Academy</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+</head>
+<body>
+
+ <!-- Top navbar -->
+ <div class="horizontal-nav">
+  <a class="navbar-brand" href="#"><h4 class="text-info font-weight-bold ml-4 mt-1">Reboot Academy</h4></a>
+</div>
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white d-flex align-items-start" id="sidebar">
+  <div class="nav bg-white mb-0 align-content-start col-12">
+    <div class="nav-item text-center col-12 p-4">
+      <a href="./profile.html">
+        <img id="userphoto" alt="..." width="65"
+      class="rounded-circle m-4">
+      <h4 id="name" class="m-0">Hello <span id="username"></span></h4>
+     </a> <!--<p class="font-weight-light text-muted mb-0">Web developer</p>-->
+    </div>
+
+    <div class="nav-item col-12 p-4 text-center">
+      <a href="./explore.html" class="btn nav-link text-dark bg-white">
+        <span class="glyphicon glyphicon-globe display-4 m-4"></span> <h4 id="explore">Explore</h4>
+      </a>
+    </div>
+    <div class="nav-item col-12 p-4 text-center elem-sidebar">
+      <a href="./mylessons.html" class="btn nav-link text-dark">
+      <span class="glyphicon glyphicon-record display-4 m-4" ></span><h4 id="mylessons">My Lessons</h4>
+    </a>
+  </div>
+  <div class="nav-item col-12 p-4 text-center">
+    <a id="btn-logout" class="btn nav-link text-dark" >
+      <span class="glyphicon glyphicon-off display-4 m-4 d-inline"></span><h4 id="logout">Log out</h4>
+    </a>
+  </div>
+</div>
+<!-- Toggle button -->
+<button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-circle ml-2 mt-2 p-3 col"><span class="display-6 glyphicon glyphicon-transfer"></span></button>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content background inner-shadow" id="content">
+
+<!-- Demo content -->
+
+<div class="content inner-shadow bg-light rounded-corner">
+  <div class="container justify-content-end" id="lessons">
+    <!-- LESSON -->
+  </div>
+</div>
+
+
+</div>
+<!-- End demo content -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+  <script src="scripts/index.js"></script>
+  <script src="scripts/explore.js"></script>
+  <script src="scripts/mylessons.js"></script>
+</body>
+
+</html>

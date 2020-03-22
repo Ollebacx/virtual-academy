@@ -57,8 +57,8 @@ You should see something like:
 ```
 Starting up http-server, serving ./
 Available on:
-  http://127.0.0.1:8080
-  http://192.168.43.142:8080
+  http://127.0.0.1:3000
+  http://192.168.43.142:3000
 Hit CTRL-C to stop the server
 ```
 
