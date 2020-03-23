@@ -5,7 +5,7 @@ const api = axios.create({
 
 function createLessons (lesson) {
   const lessonHTML = document.createElement('div')
-  lessonHTML.classList = 'd-flex bg-white shadow shadow mt-5 lesson'
+  lessonHTML.classList = 'd-flex bg-white shadow mt-5 lesson'
   lessonHTML.innerHTML = `
     <div class="col-2 ml d-flex justify-content-center align-items-center ${lesson.color}"><h1 class="font-weight-bold display-2">${lesson.logoText}</h1></div>
     <div id="info" class="col-10">
